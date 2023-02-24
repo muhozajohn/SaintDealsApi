@@ -1,0 +1,94 @@
+.fashioNews{
+    position: relative;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+#fashNews h2>span{
+    background-color: var(--color-text-small);
+    opacity: 0.5;
+    padding: 1rem 2rem;
+    position: relative;
+    right: -2.5rem;
+    z-index: -1;
+}
+#fashNews h2{
+    font-weight: 700;
+}
+.fashCard{
+    height: 300px;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+}
+.fashCard img{
+    width: 100%;
+    height: 100%;
+}
+.overFashion{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), var(--color-text)); 
+}
+.overFashion h4{
+    color: var(--color-bg);
+}
+.overFashion small{
+    color: var(--color-text-small);
+}
+
+.fashBrand{
+    padding: 0.2rem 3rem;
+    background: var(--color-cards);
+    position: absolute;
+    top: 50.6%;
+    left: calc(10% - 3.9rem);
+}
+.overFlow{
+    width: 1.9rem;
+    height: 1.9rem;
+    background: var(--color-card);
+    top: calc(50% + 15px);
+    left: -1.2rem;
+    position: absolute;
+    transform: rotate(30deg);
+    z-index: -30;
+}
+
+
+/* ================================ media Queries ================================= */
+@media screen AND (max-width: 1024px) {
+    .container{
+        width: var(--width-md);
+        margin: 0 auto;
+    }
+    .fashioNews{
+        position: relative;
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+@media screen AND (max-width: 600px) {
+    .container{
+        width: var(--width-sm);
+        margin: 0 auto;
+    }
+    .fashioNews{
+        position: relative;
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+    }
+}
